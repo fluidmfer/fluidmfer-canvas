@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* custom design tokens for tailwind v4.
+   --color-* names become utilities like bg-canvas, text-accent, border-accent, etc. */
+@theme {
+  --color-canvas: #121212;
+  --color-surface: #1a1a1a;
+  --color-surface-2: #202020;
+  --color-edge: #2b2b2b;
+  --color-accent: #ff3131;
+  --color-accent-hover: #ff4a4a;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #121212;
+  color: #e6e6e6;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* thin dark scrollbars to match the theme */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2b2b2b #121212;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #2b2b2b;
+  border-radius: 8px;
+}
