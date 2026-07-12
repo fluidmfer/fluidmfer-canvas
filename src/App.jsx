@@ -355,7 +355,7 @@ export default function App() {
                 )}
               </div>
 
-              
+              <a
                 href="https://x.com/fluidmfer"
                 target="_blank"
                 rel="noopener noreferrer"
